@@ -1,0 +1,17 @@
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackTests\obj\Debug\netcoreapp2.1\FoodFeedbackTests.csprojAssemblyReference.cache
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackTests\obj\Debug\netcoreapp2.1\FoodFeedbackTests.csproj.CoreCompileInputs.cache
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackTests\obj\Debug\netcoreapp2.1\FoodFeedbackTests.AssemblyInfoInputs.cache
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackTests\obj\Debug\netcoreapp2.1\FoodFeedbackTests.AssemblyInfo.cs
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackTests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackTests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackTests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackTests\bin\Debug\netcoreapp2.1\FoodFeedbackTests.deps.json
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackTests\bin\Debug\netcoreapp2.1\FoodFeedbackTests.runtimeconfig.json
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackTests\bin\Debug\netcoreapp2.1\FoodFeedbackTests.runtimeconfig.dev.json
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackTests\bin\Debug\netcoreapp2.1\FoodFeedbackTests.dll
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackTests\bin\Debug\netcoreapp2.1\FoodFeedbackTests.pdb
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackTests\bin\Debug\netcoreapp2.1\FoodFeedbackSystem.dll
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackTests\bin\Debug\netcoreapp2.1\FoodFeedbackSystem.pdb
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackTests\obj\Debug\netcoreapp2.1\FoodFeedbackTests.csproj.CopyComplete
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackTests\obj\Debug\netcoreapp2.1\FoodFeedbackTests.dll
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackTests\obj\Debug\netcoreapp2.1\FoodFeedbackTests.pdb

@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FoodFeedbackSystem.Models;
+using FoodFeedbackSystem.Services;
+using FoodFeedbackSystem.Services.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -25,6 +29,11 @@ namespace FoodFeedbackSystem
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<ILoginService, Loginservice>();
+            services.AddTransient<IRegistrationService, RegistrationService>();
+            services.AddTransient<IAddFeedbackService, AddFeedbackService>();
+            services.AddTransient<IViewRatingService, ViewRatingService>();
+            services.AddDbContext<FoodfeedbackDBContext>(opts => opts.UseSqlServer(Configuration["ConnectionString:FoodfeedbackDB"]));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -39,7 +48,7 @@ namespace FoodFeedbackSystem
             {
                 app.UseHsts();
             }
-
+            app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
             app.UseHttpsRedirection();
             app.UseMvc();
         }

@@ -1,0 +1,14 @@
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackSystem\bin\Debug\netcoreapp2.1\FoodFeedbackSystem.deps.json
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackSystem\bin\Debug\netcoreapp2.1\FoodFeedbackSystem.runtimeconfig.json
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackSystem\bin\Debug\netcoreapp2.1\FoodFeedbackSystem.runtimeconfig.dev.json
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackSystem\bin\Debug\netcoreapp2.1\FoodFeedbackSystem.dll
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackSystem\bin\Debug\netcoreapp2.1\FoodFeedbackSystem.pdb
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackSystem\obj\Debug\netcoreapp2.1\FoodFeedbackSystem.csproj.CoreCompileInputs.cache
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackSystem\obj\Debug\netcoreapp2.1\FoodFeedbackSystem.RazorAssemblyInfo.cache
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackSystem\obj\Debug\netcoreapp2.1\FoodFeedbackSystem.RazorAssemblyInfo.cs
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackSystem\obj\Debug\netcoreapp2.1\FoodFeedbackSystem.AssemblyInfoInputs.cache
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackSystem\obj\Debug\netcoreapp2.1\FoodFeedbackSystem.AssemblyInfo.cs
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackSystem\obj\Debug\netcoreapp2.1\FoodFeedbackSystem.RazorTargetAssemblyInfo.cache
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackSystem\obj\Debug\netcoreapp2.1\FoodFeedbackSystem.dll
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackSystem\obj\Debug\netcoreapp2.1\FoodFeedbackSystem.pdb
+C:\Users\purvajag\source\repos\FoodFeedbackSystem\FoodFeedbackSystem\obj\Debug\netcoreapp2.1\FoodFeedbackSystem.csprojAssemblyReference.cache
