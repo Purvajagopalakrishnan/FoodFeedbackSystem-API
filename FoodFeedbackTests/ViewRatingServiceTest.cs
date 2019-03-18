@@ -26,7 +26,7 @@ namespace FoodFeedbackTests
                 SelectDate = new DateTime(2019, 02, 28),
                 TypeOfMeal = "Dinner"
             });
-            Assert.IsAssignableFrom<IQueryable<ResponseDTO>>(response);
+            Assert.IsAssignableFrom<double>(response);
         }
     }
 }

@@ -25,7 +25,7 @@ namespace FoodFeedbackTests
                 SelectDate = new DateTime(),
                 TypeOfMeal = ""
             });
-            Assert.Equal(400, ((BadRequestResult)response).StatusCode);
+            Assert.Equal(200, ((OkObjectResult)response).StatusCode);
         }
     }
 }

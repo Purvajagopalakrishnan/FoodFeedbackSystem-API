@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Moq;
 using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 using Xunit;
 
 namespace FoodFeedbackTests
@@ -25,7 +25,7 @@ namespace FoodFeedbackTests
                 TypeOfMeal = "dinner",
                 Rating = 3,
                 Comments = "good",
-                Email = "john89@cesltd.com"
+                Email = "catherine89@cesltd.com"
             });
             Assert.True(response);
         }
