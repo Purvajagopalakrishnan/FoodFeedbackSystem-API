@@ -1,10 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.IdentityModel.Tokens.Jwt;
+using System.Text;
+using Microsoft.Extensions.Configuration;
 using FoodFeedbackSystem.DTO;
 using FoodFeedbackSystem.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 
 namespace FoodFeedbackSystem.Controllers
 {
@@ -14,9 +15,11 @@ namespace FoodFeedbackSystem.Controllers
     /// </summary>
     public class LoginController : Controller
     {
+        private readonly IConfiguration _configuration;
         private readonly ILoginService _loginService;
-        public LoginController(ILoginService loginService)
+        public LoginController(IConfiguration configuration,ILoginService loginService)
         {
+            _configuration = configuration;
             _loginService = loginService;
         }
         [HttpPost]
@@ -30,13 +33,13 @@ namespace FoodFeedbackSystem.Controllers
                 try
                 {
                     var result = _loginService.CheckIfUserExists(userDTO);
-                    if (result == 1)
+                    if (result != null)
                     {
-                        return Ok(result);
-                    }
-                    else if(result == 0)
-                    {
-                        return Ok(result);
+                        var authDTO = new AuthDTO();
+                        authDTO.email = userDTO.Email;
+                        authDTO.isAdmin = result.IsAdmin;
+                        authDTO.token = GenerateJwtToken();
+                        return Ok(authDTO);
                     }
                     else
                     {
@@ -49,6 +52,29 @@ namespace FoodFeedbackSystem.Controllers
                 }
             }
             return BadRequest();
+        }
+
+        private string GenerateJwtToken()
+        {
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration[Constants.JWTSecretKey]));
+
+            var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+
+
+            var jwtToken = new JwtSecurityToken(
+
+                issuer: _configuration[Constants.JWTIssuer],
+
+                audience: _configuration[Constants.JWTAudience],
+
+                signingCredentials: credentials,
+
+                expires: DateTime.Now.AddHours(1)
+
+                );
+            return new JwtSecurityTokenHandler().WriteToken(jwtToken);
         }
     }
 }

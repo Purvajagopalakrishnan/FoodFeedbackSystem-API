@@ -23,7 +23,7 @@ namespace FoodFeedbackSystem.Services
         /// </returns>
         public double GetAverageRating([FromBody]ViewRatingDTO viewratingDTO)
         {
-                var entities = new FoodfeedbackDBContext();
+            var entities = new FoodfeedbackDBContext();
             var viewratingresult = entities.Feedback.Where(r => r.SelectDate == viewratingDTO.SelectDate && r.TypeOfMeal == viewratingDTO.TypeOfMeal)
             .GroupBy(g => g.TypeOfMeal, r => r.Rating)
                 .Select(g => new ResponseDTO()

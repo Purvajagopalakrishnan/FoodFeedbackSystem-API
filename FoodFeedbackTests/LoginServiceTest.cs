@@ -21,7 +21,8 @@ namespace FoodFeedbackTests
                 Email = "john89@cesltd.com",
                 Password = "welcome"
             });
-            Assert.IsAssignableFrom<int>(response);
+            Assert.IsAssignableFrom<AdminDTO>(response);
         }
+       
     }
 }

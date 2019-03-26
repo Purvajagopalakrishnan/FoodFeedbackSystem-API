@@ -9,7 +9,7 @@ namespace FoodFeedbackSystem.Services.Interfaces
 {
     public interface ILoginService
     {
-        int CheckIfUserExists(UserDTO userDTO);
-        int CheckIfUserIsAdmin(string email);
+        AdminDTO CheckIfUserExists(UserDTO userDTO);
+        bool CheckIfUserIsAdmin(string email);
     }
 }
